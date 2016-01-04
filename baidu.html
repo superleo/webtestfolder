@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="always" name="referrer">
+    <link rel="dns-prefetch" href="//s1.bdstatic.com"/>
+    <link rel="dns-prefetch" href="//t1.baidu.com"/>
+    <link rel="dns-prefetch" href="//t2.baidu.com"/>
+    <link rel="dns-prefetch" href="//t3.baidu.com"/>
+    <link rel="dns-prefetch" href="//t10.baidu.com"/>
+    <link rel="dns-prefetch" href="//t11.baidu.com"/>
+    <link rel="dns-prefetch" href="//t12.baidu.com"/>
+    <link rel="dns-prefetch" href="//b1.bdstatic.com"/>
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="baidu.css">
+    <script type="text/javascript">function cc() {
+        !function () {
+            function d(a, n) {
+                var e = '; expires=Mon,01-Jan-1973 00:00:01 GMT', c = a.length, b = a[c - 1];
+                if (n) {
+                    document.cookie = n + '=' + e;
+                    for (var i = c - 2; i >= 0; i--) {
+                        b = a[i] + '.' + b;
+                        document.cookie = n + '=; domain=' + b + e;
+                        document.cookie = n + '=; domain=.' + b + e;
+                    }
+                }
+            }
+
+            (function () {
+                var a = document.cookie.split('; ');
+                for (var i = 0; i < a.length; i++) {
+                    d(location.hostname.split('.'), a[i].split('=')[0]);
+                }
+            })();
+        }();
+    }
+    function ii(arr, tn) {
+        var randvar = Math.floor(Math.random() * 100);
+        tn = tn || "baidu";
+        for (var i in arr) {
+            if (arr.hasOwnProperty(i)) {
+                if (arr[i] > randvar) {
+                    tn = i;
+                    break
+                } else {
+                    randvar -= arr[i]
+                }
+            }
+        }
+        ;
+        return tn;
+    }
+    function R(u) {
+        u = u || location.href + (location.href.indexOf("?") > -1 ? "&" : "?") + "t=" + new Date().getTime();
+        try {
+            if (/webkit/i.test(navigator.userAgent)) {
+                var l = document.createElement("a");
+                l.rel = "noreferrer";
+                l.href = u;
+                document.body.appendChild(l);
+                var e = document.createEvent("MouseEvents");
+                e.initEvent("click", true, true);
+                l.dispatchEvent(e);
+            } else {
+                document.open();
+                document.write("<meta http-equiv=\"Refresh\" Content=\"0; Url=" + u + "\"/>");
+                document.close();
+            }
+        } catch (e) {
+            setTimeout(function () {
+                window.location.href = u
+            }, 300);
+        }
+    }
+    ;
+    window.onload = function () {
+        cc();
+        if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+            var tn = ii({'1009280b': 25, '1011986j': 25, '1011986g': 25, '1011986h': 25});
+            R("https://m.baidu.com/?from=" + tn);
+            return;
+        }
+        var ele = document.getElementById("bd");
+        ele.style.display = "block";
+        var tnele = document.getElementById("idtn");
+        tnele.value = ii({
+            "95358957_hao_pg": 1,
+            "95073019_hao_pg": 3,
+            "95360392_hao_pg": 3,
+            "95896427_hao_pg": 3,
+            "93845108_hao_pg": 3,
+            "98742908_hao_pg": 3,
+            "91749564_hao_pg": 3,
+            "90764096_hao_pg": 3,
+            "93892369_hao_pg": 3,
+            "96451037_hao_pg": 3,
+            "93246356_hao_pg": 4,
+            "98461647_hao_pg": 4,
+            "98150928_hao_pg": 4,
+            "93326580_hao_pg": 4,
+            "91318863_hao_pg": 4,
+            "95947581_hao_pg": 4,
+            "93832038_hao_pg": 4,
+            "95613896_hao_pg": 4,
+            "90716215_hao_pg": 4,
+            "93382294_hao_pg": 4,
+            "99065014_hao_pg": 4,
+            "93562148_hao_pg": 4,
+            "98491462_hao_pg": 4,
+            "95765832_hao_pg": 4,
+            "96409444_hao_pg": 4,
+            "99262787_hao_pg": 4,
+            "97344127_hao_pg": 4,
+            "99591514_hao_pg": 4
+        });
+    };
+    String.prototype.trim = String.prototype.trim || function () {
+                return this.replace(/^\s*/g, '').replace(/\s$/g, '');
+            };
+    function cs() {
+        var kw = document.getElementById('kw');
+        if (!kw) return true;
+        kw = kw.value.trim();
+        if (kw.length == 0)return false;
+        return true;
+    }
+    </script>
+</head>
+<body link="#0000cc" style="display:none" id="bd">
+<div id="wrapper">
+    <div id="head">
+        <div class="head_wrapper">
+            <div class="s_form">
+                <div class="s_form_wrapper">
+                    <div id="lg"><img hidefocus="true" src="bd_logo1.png" width="270" height="129"></div>
+                    <a href="/" id="result_logo"><img src="http://www.baidu.com/img/baidu_jgylogo3.gif" alt="到百度首页"
+                                                      title="到百度首页"></a>
+                    <form id="form" name="f" action="https://www.baidu.com/s" class="fm"><input type="hidden" name="ie"
+                                                                                                value="utf-8"><input
+                            type="hidden" name="f" value="8"><input type="hidden" name="rsv_bp" value="1"><input
+                            type="hidden" name="rsr" value="1"><input type="hidden" name="rsv_idx" value="1"><input
+                            type=hidden name="ch" value=""><input type=hidden name="rv_sd"
+                                                                  value="13660_13387_13439_13203_13287_13602_13161_13257_11558_13085_8498"><input
+                            type=hidden name="xpth"
+                            value="http%3A%2F%2Fwww.baidu.com%2Fs%3Fie%3Dutf-8%26f%3D8%26rsv_bp%3D1%26tn%3D%26wd%3Djquery%2520get%26rsv_pq%3D85cb9ab80001cc79%26rsv_t%3D5e5dhOzL7ZokcuO8mFu469Q5e9REnkJL1CKxnvfTLS5NLzBtEZvCU0fuv4s%26rsv_enter%3D1%26rsv_sug3%3D11%26rsv_sug1%3D7%26rsv_sug2%3D0%26inputT%3D2736%26rsv_sug4%3D4394 "><input
+                            type=hidden name="tn" id="idtn" value="baidu"><input type=hidden name="bar" value=""><span
+                            class="bg s_ipt_wr"><input id="kw" name="word" class="s_ipt" value="" maxlength="255"
+                                                       autocomplete="off"></span><span class="bg s_btn_wr"><input
+                            type="submit" id="su" value="百度一下" class="bg s_btn" onclick="return cs();"></span><span
+                            class="tools"><span id="mHolder"><div id="mCon"><span>输入法</span></div><ul id="mMenu">
+                        <li><a href="javascript:;" name="ime_hw">手写</a></li>
+                        <li><a href="javascript:;" name="ime_py">拼音</a></li>
+                        <li class="ln"></li>
+                        <li><a href="javascript:;" name="ime_cl">关闭</a></li>
+                    </ul></span></span><input type="hidden" name="rn" value=""></form>
+                </div>
+            </div>
+            <div id="u1"><a href="http://news.baidu.com" name="tj_trnews" class="mnav">新闻</a><a
+                    href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a><a
+                    href="http://map.baidu.com" name="tj_trmap" class="mnav">地图</a><a href="http://v.baidu.com"
+                                                                                      name="tj_trvideo"
+                                                                                      class="mnav">视频</a><a
+                    href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">贴吧</a><a
+                    href="http://www.baidu.com/more/" name="tj_briicon" class="bri" style="display: block;">更多产品</a>
+            </div>
+        </div>
+    </div>
+    <div class="s_tab" id="s_tab"><b>网页</b><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word="
+                                              wdfield="word">新闻</a><a href="http://tieba.baidu.com/f?kw=&fr=wwwt"
+                                                                      wdfield="kw">贴吧</a><a
+            href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" wdfield="word">知道</a><a
+            href="http://music.baidu.com/search?fr=ps&ie=utf-8&key=" wdfield="key">音乐</a><a
+            href="http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word="
+            wdfield="word">图片</a><a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word="
+                                    wdfield="word">视频</a><a href="http://map.baidu.com/m?word=&fr=ps01000"
+                                                            wdfield="word">地图</a><a
+            href="http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8" wdfield="word">文库</a><a
+            href="//www.baidu.com/more/">更多»</a></div>
+    <div id="ftCon">
+        <div id="ftConw"><p id="lh"><a id="seth" onClick="h(this)" href="/">把百度设为主页</a><a id="setf"
+                                                                                          href="http://www.baidu.com/cache/sethelp/help.html"
+                                                                                          target="_blank">把百度设为主页</a><a
+                href="http://home.baidu.com">关于百度</a><a href="http://ir.baidu.com">About Baidu</a></p>
+            <p id="cp">&copy;2015&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;<a
+                    href="http://jianyi.baidu.com/" class="cp-feedback">意见反馈</a>&nbsp;京ICP证030173号&nbsp;<img
+                    src="gs.gif"></p></div>
+    </div>
+    <div id="wrapper_wrapper"></div>
+</div>
+<div class="c-tips-container" id="c-tips-container"></div>
+</body>
+</html>
